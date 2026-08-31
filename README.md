@@ -27,14 +27,6 @@ Data products are output into the simulation's corresponding subdirectory within
 These data products are easily loaded and interacted with using the [`cosmoSim`](https://github.com/rtlow/cosmoSim)
 module.
 
-## get-genPK-info
-Calculates matter power spectra using [`GenPK`](https://github.com/sbird/GenPK).
-**Deprecated**. Use `get-pyliansPK` instead.
-
-## get-group-profiles
-Calculates cumulative distributions of halo mass and maximum circular velocity for FoF groups.
-Typically, statistics of `Subfind` subhalos are desired, so `get-profiles` should be used instead.
-
 ## get-profiles
 Calculates cumulative distributions of halo mass and maximum circular velocity for `Subfind` subhalos.
 
@@ -54,7 +46,16 @@ compiles them into a `run_info.json`.
 Use with [`cosmoSim`](https://github.com/rtlow/cosmoSim) for easy access
 and analysis.
 
+## get-genPK-info
+Calculates matter power spectra using [`GenPK`](https://github.com/sbird/GenPK).
+**Deprecated**. Use `get-pyliansPK` instead.
+
+## get-group-profiles
+Calculates cumulative distributions of halo mass and maximum circular velocity for FoF groups.
+**Deprecated** Typically, statistics of `Subfind` subhalos are desired, so `get-profiles` should be used instead.
+
 ## get-spectra-mocks
 Uses [`fake_spectra`](https://github.com/sbird/fake_spectra) to calculate mock Lyman-alpha spectra
 from simulation snapshots.
 **Deprecated**. These calculations are more efficiently performed and parallelized on a supercomputing cluster.
+Final files are also too heavy for github.
